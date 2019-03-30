@@ -44,7 +44,10 @@ void initPins(){
     /*analogWrite(sensorPin2, 1024);
     analogWrite(sensorPin2, 0);
     analogWrite(sensorPin2, 1024);*/
-    pinMode(sensorPin2,INPUT);    
+    if(sensor2AsOutput)
+      pinMode(sensorPin2,OUTPUT);
+    else
+      pinMode(sensorPin2,INPUT);    
   }
   if (connectedDevices > 0){
     pinMode(RELAY_PIN,OUTPUT);
