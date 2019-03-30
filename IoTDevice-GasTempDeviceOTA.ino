@@ -38,6 +38,7 @@ dht DHT;
 #define BUZZER_PIN D7
 //Connected Sensors Count 
 int connectedSensors = 2;
+boolean sensor2AsOutput=false;
 //Connected Relay Modules Count 
 int connectedDevices = 0;
 //Is Buzzer attached for local alarm?
