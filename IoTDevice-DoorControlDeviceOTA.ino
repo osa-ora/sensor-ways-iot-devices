@@ -35,6 +35,7 @@
 #define BUZZER_PIN D7
 //Connected Sensors Count 
 int connectedSensors = 1;
+boolean sensor2AsOutput=false;
 //Connected Relay Modules Count 
 int connectedDevices = 1;
 //Is Buzzer attached for local alarm?
